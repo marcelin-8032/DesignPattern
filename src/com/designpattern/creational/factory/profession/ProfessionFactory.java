@@ -1,8 +1,8 @@
-package com.designpattern.creational.factory;
+package com.designpattern.creational.factory.profession;
 
  class ProfessionFactory {
 
-    public Profession getProfession(String typeOfProfession) {
+    public IProfession getProfession(String typeOfProfession) {
         if (typeOfProfession == null) {
             return null;
         }

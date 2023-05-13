@@ -1,9 +1,8 @@
-package com.designpattern.creational.builder;
+package com.designpattern.creational.builder.home;
 
-class EarthQuakeResistantBuilder implements Builder {
+class EarthQuakeResistantBuilder implements IHomeBuilder {
 
     private Home earthquakeResistantHome = new Home();
-
 
     @Override
     public void buildFloor() {

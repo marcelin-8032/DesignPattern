@@ -1,7 +1,8 @@
-package com.designpattern.creational.builder;
+package com.designpattern.creational.builder.home;
 
-public interface Builder {
 
+
+public interface IHomeBuilder {
 
     void buildFloor();
 
@@ -10,6 +11,5 @@ public interface Builder {
     void buildTerrace();
 
     Home getComplexHomeObject();
-
 
 }

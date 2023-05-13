@@ -1,10 +1,11 @@
-package com.designpattern.creational.builder;
+package com.designpattern.creational.builder.home;
+
 
 class Director {
 
-    private Builder builder;
+    private IHomeBuilder builder;
 
-    public Director(Builder builderType) {
+    public Director(IHomeBuilder builderType) {
         this.builder = builderType;
     }
 
