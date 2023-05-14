@@ -2,9 +2,7 @@ package com.designpattern.creational.singleton;
 
 public final class SingletonClass {
 
-
     private static volatile SingletonClass instance = null;
-
 
     private SingletonClass() {
     }
@@ -12,7 +10,6 @@ public final class SingletonClass {
     public static SingletonClass getInstance() {
 
         if (SingletonClass.instance == null) {
-
             synchronized (SingletonClass.class) {
                 if (SingletonClass.instance == null) {
                     SingletonClass.instance = new SingletonClass();
