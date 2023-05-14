@@ -1,6 +1,4 @@
-package com.designpattern.creational.prototype;
-
-import java.io.IOException;
+package com.designpattern.creational.prototype.profession;
 
 class Engineer extends Profession {
     @Override

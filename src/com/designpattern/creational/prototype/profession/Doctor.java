@@ -1,4 +1,4 @@
-package com.designpattern.creational.prototype;
+package com.designpattern.creational.prototype.profession;
 
 
 class Doctor extends Profession {

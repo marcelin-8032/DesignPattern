@@ -1,12 +1,4 @@
 
-f
-6src/com/designpattern/creational/factory/Engineer.java,e\1\e1b928d133fe77ddc1ba67d304eb9fa87fe5dfa4
-d
-4src/com/designpattern/creational/factory/Doctor.java,b\4\b4fc02683d421826d6f30dde69a85ba3f47de41a
-e
-5src/com/designpattern/creational/factory/Teacher.java,7\b\7bcdde873036502c23d72eda28163c81107923a5
-h
-8src/com/designpattern/creational/factory/Profession.java,a\0\a0cb9710d2708e64d9bcfd69fef7c32e0c9aad3c
 s
 Csrc/com/designpattern/creational/abstractfactory/TraineeDoctor.java,d\0\d0bab496c59b3bb3cd4aa9e97933c98128a86548
 u
@@ -37,16 +29,12 @@ o
 ?src/com/designpattern/creational/prototype/ProfessionCache.java,a\3\a3966a33f2d47cc203dea5663608ad13caecd35c
 p
 @src/com/designpattern/creational/abstractfactory/Profession.java,a\6\a6410669e4f141e51fa5ec69d38b70baa477f55f
-u
-Esrc/com/designpattern/creational/factory/FactoryPatternMainClass.java,c\f\cf62bd5355feb93e859e4434a66693ae14fcec28
 n
 >src/com/designpattern/creational/singleton/SingletonClass.java,8\c\8c7f68055e0a00b7df74cacbb6b2e94119e09500
 i
 9src/com/designpattern/creational/singleton/MainClass.java,a\b\aba4488c7047179e739f1e7c4e82ffc288a65d20
 j
 :src/com/designpattern/creational/prototype/Profession.java,d\1\d1f3cbd6b955aa47223186bd2a04a44a8bac629b
-o
-?src/com/designpattern/creational/factory/ProfessionFactory.java,3\3\3368c10141c0bbe0c74b45404a9e9672d00ae26a
 f
 6src/com/designpattern/creational/prototype/Doctor.java,a\b\aba892be954ad8097962c7d4158dd8f6394e8ac7
 y

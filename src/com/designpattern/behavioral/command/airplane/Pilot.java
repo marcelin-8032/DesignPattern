@@ -25,7 +25,8 @@ public class Pilot {
         do{
             String command = (String) JOptionPane.showInputDialog(
                     null, "Give command",
-                    "Command Controls", JOptionPane.INFORMATION_MESSAGE, null, this.commands, this.commands[0]);
+                    "Command Controls", JOptionPane.INFORMATION_MESSAGE,
+                    null, this.commands, this.commands[0]);
             cockpit.execute(command);
         }while(true);
     }
