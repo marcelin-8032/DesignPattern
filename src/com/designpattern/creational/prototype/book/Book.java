@@ -1,4 +1,4 @@
-package com.designpattern.creational.prototype.Book;
+package com.designpattern.creational.prototype.book;
 
 public class Book {
 

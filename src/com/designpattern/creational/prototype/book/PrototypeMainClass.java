@@ -1,4 +1,4 @@
-package com.designpattern.creational.prototype.Book;
+package com.designpattern.creational.prototype.book;
 
 public class PrototypeMainClass {
 
@@ -15,8 +15,5 @@ public class PrototypeMainClass {
         System.out.println(bs1);
 
     }
-
-
-
 
 }
