@@ -1,5 +1,8 @@
 package com.design.pattern.structural.proxy.internet;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Client {
 
     public static void main(String[] args) {
@@ -9,7 +12,7 @@ public class Client {
             internet.connectTo("www.google.com");
             //internet.connectTo("abc.com");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            log.info(e.getMessage());
         }
     }
 }

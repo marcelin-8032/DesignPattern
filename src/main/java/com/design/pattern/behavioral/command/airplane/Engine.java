@@ -1,12 +1,15 @@
 package com.design.pattern.behavioral.command.airplane;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Engine {
 
     public void speedUP(){
-        System.out.println("Speeding up the engine");
+        log.info("Speeding up the engine");
     }
 
     public void speedDOWN(){
-        System.out.println("Slow down the engine");
+        log.info("Slow down the engine");
     }
 }

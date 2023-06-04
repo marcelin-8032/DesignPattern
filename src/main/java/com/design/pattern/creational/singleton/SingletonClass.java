@@ -1,5 +1,8 @@
 package com.design.pattern.creational.singleton;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public final class SingletonClass {
 
     private static volatile SingletonClass instance = null;
@@ -22,10 +25,10 @@ public final class SingletonClass {
 
 
     public void simpleMethod1() {
-        System.out.println("Print simple method 1");
+        log.info("Print simple method 1");
     }
 
     public void simpleMethod2() {
-        System.out.println("Print simple method 2");
+        log.info("Print simple method 2");
     }
 }

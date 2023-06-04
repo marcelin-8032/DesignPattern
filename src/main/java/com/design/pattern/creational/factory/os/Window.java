@@ -1,8 +1,11 @@
 package com.design.pattern.creational.factory.os;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Window implements IOperatingSystem {
     @Override
     public void specifications() {
-        System.out.println("I never die, since i am adaptable..");
+        log.info("I never die, since i am adaptable..");
     }
 }

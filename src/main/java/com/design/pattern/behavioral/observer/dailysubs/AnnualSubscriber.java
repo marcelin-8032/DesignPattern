@@ -1,5 +1,8 @@
 package com.design.pattern.behavioral.observer.dailysubs;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class AnnualSubscriber extends Subscriber {
 
     public AnnualSubscriber(Daily daily) {
@@ -9,7 +12,7 @@ public class AnnualSubscriber extends Subscriber {
 
     @Override
     void notifier() {
-        System.out.println("Annual subscriber notification received: " + daily.getState());
+        log.info("Annual subscriber notification received: " + daily.getState());
 
     }
 }

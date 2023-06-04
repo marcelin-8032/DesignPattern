@@ -1,9 +1,12 @@
 package com.design.pattern.creational.builder.restaurant;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Pepsi extends FreshDrink {
 
     public Pepsi() {
-        System.out.println("Have a Pepsi");
+        log.info("Have a Pepsi");
     }
 
     @Override

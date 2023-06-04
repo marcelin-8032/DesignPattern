@@ -1,5 +1,8 @@
 package com.design.pattern.creational.prototype.profession;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
  class ProtoTypePatternMainClass {
 
 
@@ -7,16 +10,16 @@ package com.design.pattern.creational.prototype.profession;
          ProfessionCache.loadProffesionCache();
 
          Profession docProfession=ProfessionCache.getCloneNewProfession(1);
-         System.out.println(docProfession);
+         log.info(String.valueOf(docProfession));
 
          Profession engProfession=ProfessionCache.getCloneNewProfession(2);
-         System.out.println(engProfession);
+         log.info(String.valueOf(engProfession));
 
          Profession teachProfession=ProfessionCache.getCloneNewProfession(3);
-         System.out.println(teachProfession);
+         log.info(String.valueOf(teachProfession));
 
          Profession docProfession2=ProfessionCache.getCloneNewProfession(1);
-         System.out.println(docProfession2);
+         log.info(String.valueOf(docProfession2));
 
 
      }

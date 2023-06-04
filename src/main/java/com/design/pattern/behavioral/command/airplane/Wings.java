@@ -1,25 +1,28 @@
 package com.design.pattern.behavioral.command.airplane;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Wings {
 
     void moveUP(){
-        System.out.println("Flight moving upwards");
+        log.info("Flight moving upwards");
     }
 
     void moveDown(){
-        System.out.println("Flight moving downwards");
+        log.info("Flight moving downwards");
     }
 
     void keepFlat(){
-        System.out.println("Flying flat");
+        log.info("Flying flat");
     }
 
     void turnLeft(){
-        System.out.println("Turn Left");
+        log.info("Turn Left");
     }
 
     void turnRight(){
-        System.out.println("Turn Right");
+        log.info("Turn Right");
     }
 
 }

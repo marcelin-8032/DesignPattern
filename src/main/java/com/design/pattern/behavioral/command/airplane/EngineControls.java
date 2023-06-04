@@ -1,5 +1,8 @@
 package com.design.pattern.behavioral.command.airplane;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class EngineControls implements ICommandController {
 
     private Engine engine;
@@ -22,7 +25,7 @@ public class EngineControls implements ICommandController {
                 engine.speedDOWN();
             }
             default -> {
-                System.out.println("Sorry I did not understand the command");
+                log.info("Sorry I did not understand the command");
             }
 
         }

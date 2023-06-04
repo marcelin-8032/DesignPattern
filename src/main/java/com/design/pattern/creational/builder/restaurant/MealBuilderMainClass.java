@@ -1,5 +1,8 @@
 package com.design.pattern.creational.builder.restaurant;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class MealBuilderMainClass {
 
 
@@ -10,19 +13,19 @@ public class MealBuilderMainClass {
         Meal cheeseBurger = mealBuilder.prepareCheeseBurger();
         Meal chickenBurger = mealBuilder.prepareChickenBurger();
 
-        System.out.println("CheeseBurger");
+        log.info("CheeseBurger");
         cheeseBurger.showItem();
-        System.out.println("Total command cheeseBurger: " + cheeseBurger.getCost());
+        log.info("Total command cheeseBurger: " + cheeseBurger.getCost());
 
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("******** next ****** next *******");
-        System.out.println("");
+        log.info("");
+        log.info("");
+        log.info("");
+        log.info("******** next ****** next *******");
+        log.info("");
 
-        System.out.println( "chickenBurger" );
+        log.info( "chickenBurger" );
         chickenBurger.showItem();
-        System.out.println( "Total command chickenBurger : " + chickenBurger.getCost() );
+        log.info( "Total command chickenBurger : " + chickenBurger.getCost() );
 
 
     }

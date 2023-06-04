@@ -1,9 +1,12 @@
 package com.design.pattern.structural.facade;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Square implements Shape {
 
     @Override
     public void draw() {
-        System.out.println("Square::draw()");
+        log.info("Square::draw()");
     }
 }

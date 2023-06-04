@@ -1,9 +1,12 @@
 package com.design.pattern.creational.builder.restaurant;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class MealBuilder {
 
     public MealBuilder() {
-        System.out.println("Have a Meal Builder");
+        log.info("Have a Meal Builder");
     }
 
 

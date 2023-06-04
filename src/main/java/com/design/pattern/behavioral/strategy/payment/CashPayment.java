@@ -1,8 +1,11 @@
 package com.design.pattern.behavioral.strategy.payment;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class CashPayment implements PayStrategy{
     @Override
     public void pay() {
-        System.out.println("Payment cash done with success");
+        log.info("Payment cash done with success");
     }
 }

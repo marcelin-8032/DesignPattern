@@ -1,5 +1,8 @@
 package com.design.pattern.behavioral.command.airplane;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class WingControls implements ICommandController {
 
     private Wings wings;
@@ -33,7 +36,7 @@ public class WingControls implements ICommandController {
                 wings.turnLeft();
             }
             default -> {
-                System.out.println("Sorry i did not understand the wing operaion command");
+                log.info("Sorry i did not understand the wing operaion command");
             }
         }
     }

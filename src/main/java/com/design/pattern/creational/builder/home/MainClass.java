@@ -1,5 +1,8 @@
 package com.design.pattern.creational.builder.home;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 class MainClass {
 
 
@@ -12,8 +15,8 @@ class MainClass {
         director.manageRequiredHomeConstruction();
         Home homeConstructedAtTheEnd = director.getComplexObjectOfHome();
 
-        System.out.println(homeConstructedAtTheEnd);
-        System.out.println(homeConstructedAtTheEnd.floor);
+        log.info("homeConstructedAtTheEnd: ", homeConstructedAtTheEnd);
+        log.info(homeConstructedAtTheEnd.floor);
 
 
         var floodResistantBuilder=new FloodResistantBuilder();
@@ -22,8 +25,8 @@ class MainClass {
         director2.manageRequiredHomeConstruction();
         Home floodResistantHome=director2.getComplexObjectOfHome();
 
-        System.out.println(floodResistantHome);
-        System.out.println(floodResistantHome.floor);
+        log.info("floodResistantHome: ", floodResistantHome);
+        log.info(floodResistantHome.floor);
 
 
 

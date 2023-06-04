@@ -1,8 +1,11 @@
 package com.design.pattern.creational.builder.restaurant;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 public class Meal {
 
     private List<MenuItem> mealItemList;
@@ -27,12 +30,12 @@ public class Meal {
 
 
     public void showItem() {
-        System.out.println("*************************************");
+        log.info("*************************************");
         for (MenuItem m : mealItemList) {
-            System.out.println("Meal item: " + m.name());
-            System.out.println("Package Type: " + m.packageType().packaging());
-            System.out.println("Price: " + m.price());
-            System.out.println("**********************************");
+            log.info("Meal item: " + m.name());
+            log.info("Package Type: " + m.packageType().packaging());
+            log.info("Price: " + m.price());
+            log.info("**********************************");
 
         }
 

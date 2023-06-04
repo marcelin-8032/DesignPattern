@@ -1,12 +1,15 @@
 package com.design.pattern.structural.proxy.internet;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class RealInternet implements Internet {
 
 
     @Override
     public void connectTo(String serverHost) throws Exception {
 
-        System.out.println("Connecting to: " + serverHost);
+        log.info("Connecting to: " + serverHost);
 
     }
 }

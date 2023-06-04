@@ -1,8 +1,11 @@
 package com.design.pattern.behavioral.observer.weatherforcast;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 public class ForecastDisplay implements Observer {
 
     private List<Integer> tempHistory;
@@ -22,9 +25,9 @@ public class ForecastDisplay implements Observer {
     }
 
     private void display7DayHistory() {
-        System.out.println("Temperature History: "+
+        log.info("Temperature History: "+
                 tempHistory.subList(Math.max(tempHistory.size()-7, 0), tempHistory.size()));
-        System.out.println("Humidity History: "+
+        log.info("Humidity History: "+
                 humidityHistory.subList(Math.max(humidityHistory.size()-7, 0), humidityHistory.size()));
     }
 }

@@ -1,9 +1,12 @@
 package com.design.pattern.creational.builder.restaurant;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class ChickenBurger extends BurgerSandwich {
 
     public ChickenBurger() {
-        System.out.println("Have a Chicken Burger");
+        log.info("Have a Chicken Burger");
     }
 
     @Override

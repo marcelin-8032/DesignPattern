@@ -1,5 +1,8 @@
 package com.design.pattern.behavioral.observer.dailysubs;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class DailyObserverMainClass {
 
     public static void main(String[] args) {
@@ -8,7 +11,7 @@ public class DailyObserverMainClass {
         var monthlySubscriber = new MonthlySubscriber(daily);
 
         daily.setState("News of 17h");
-        System.out.println("");
+        log.info("");
         daily.setState("News of 18h");
     }
 }

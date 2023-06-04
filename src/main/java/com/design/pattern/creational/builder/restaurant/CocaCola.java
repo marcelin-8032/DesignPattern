@@ -1,9 +1,12 @@
 package com.design.pattern.creational.builder.restaurant;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class CocaCola extends FreshDrink {
 
     public CocaCola() {
-        System.out.println("Have a Coca Cola");
+        log.info("Have a Coca Cola");
     }
 
 

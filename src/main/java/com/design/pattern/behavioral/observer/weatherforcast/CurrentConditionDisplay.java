@@ -1,5 +1,8 @@
 package com.design.pattern.behavioral.observer.weatherforcast;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class CurrentConditionDisplay implements Observer {
 
     private int temp;
@@ -17,7 +20,7 @@ public class CurrentConditionDisplay implements Observer {
     }
 
     private void displayCurrent() {
-        System.out.println("Current Temperature: " + temp);
-        System.out.println("Current Humidity: " + humidity);
+        log.info("Current Temperature: " + temp);
+        log.info("Current Humidity: " + humidity);
     }
 }

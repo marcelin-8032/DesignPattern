@@ -1,18 +1,21 @@
 package com.design.pattern.behavioral.command.document;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Document {
 
 
     void open() {
-        System.out.println("Document Opened");
+        log.info("Document Opened");
     }
 
     void save() {
-        System.out.println("Document Saved");
+        log.info("Document Saved");
     }
 
     void close() {
-        System.out.println("Document Closed");
+        log.info("Document Closed");
     }
 
 

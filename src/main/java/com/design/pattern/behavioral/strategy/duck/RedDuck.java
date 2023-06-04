@@ -1,5 +1,8 @@
 package com.design.pattern.behavioral.strategy.duck;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class RedDuck extends Duck{
 
 
@@ -9,6 +12,6 @@ public class RedDuck extends Duck{
 
     @Override
     public void swim() {
-        System.out.println("I am swing both under and surface of water");
+        log.info("I am swing both under and surface of water");
     }
 }

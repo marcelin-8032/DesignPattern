@@ -1,8 +1,11 @@
 package com.design.pattern.behavioral.command.airplane;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Iterator;
 import java.util.List;
 
+@Slf4j
 public class Cockpit implements ICommandController {
 
     public static final String TAKE_OFF = "TAKE_OFF";
@@ -52,24 +55,24 @@ public class Cockpit implements ICommandController {
     }
 
     private void takeOff() {
-        System.out.println("Fligh Take Off operations---------");
+        log.info("Fligh Take Off operations---------");
         this.execute(EngineControls.SPEED_UP);
         this.execute(WingControls.MOVE_UP);
-        System.out.println("---------");
+        log.info("---------");
     }
 
     private void reachAltitudeAndFly() {
-        System.out.println("Flying at an altitue---------");
+        log.info("Flying at an altitue---------");
         this.execute(EngineControls.SPEED_UP);
         this.execute(WingControls.KEEP_FLAT);
-        System.out.println("---------");
+        log.info("---------");
     }
 
     private void land() {
-        System.out.println("Landing the Flight----------");
+        log.info("Landing the Flight----------");
         this.execute(EngineControls.SLOW_DOWN);
         this.execute(WingControls.MOVE_DOWN);
-        System.out.println("---------");
+        log.info("---------");
     }
 
 }

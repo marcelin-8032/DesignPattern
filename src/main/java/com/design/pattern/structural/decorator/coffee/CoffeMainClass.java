@@ -1,5 +1,8 @@
 package com.design.pattern.structural.decorator.coffee;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class CoffeMainClass {
 
 
@@ -13,7 +16,7 @@ public class CoffeMainClass {
 
     private static void printCoffee(Coffee coffee) {
 
-        System.out.println("Cost: " + coffee.cost() +
+        log.info("Cost: " + coffee.cost() +
                 " Description: " + coffee.getDescription());
     }
 }

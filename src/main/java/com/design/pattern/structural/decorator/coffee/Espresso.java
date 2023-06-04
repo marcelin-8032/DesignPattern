@@ -1,5 +1,8 @@
 package com.design.pattern.structural.decorator.coffee;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Espresso extends Coffee {
 
 
@@ -14,7 +17,7 @@ public class Espresso extends Coffee {
 
     public static void main(String[] args) {
         Espresso espresso=new Espresso();
-        System.out.println(espresso);
+        log.info("espresso: ", espresso);
     }
 
 }

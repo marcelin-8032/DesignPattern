@@ -1,5 +1,8 @@
 package com.design.pattern.structural.proxy.website;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class WebSiteReal implements IWebSite {
 
     private String siteName;
@@ -14,7 +17,7 @@ public class WebSiteReal implements IWebSite {
     }
 
     private void loadFromTheSite(String siteName) {
-        System.out.println("Load from the site: " + siteName);
+        log.info("Load from the site: " + siteName);
     }
 
 

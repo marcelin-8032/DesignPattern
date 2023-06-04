@@ -1,5 +1,8 @@
 package com.design.pattern.behavioral.strategy.war;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Bowman extends Warrior {
 
     public Bowman() {
@@ -10,7 +13,7 @@ public class Bowman extends Warrior {
     @Override
     void fight() {
         for (int i = 0; i < 4; i++) {
-            System.out.println(this.getClass().getTypeName() + " throw an arrow of the bow");
+            log.info(this.getClass().getTypeName() + " throw an arrow of the bow");
         }
     }
 }
