@@ -55,3 +55,5 @@
 2023-Jun-04 20:36:55:801 PM INFO  Radio - | Current channel is 1
 2023-Jun-04 20:36:55:801 PM INFO  Radio - ------------------------------------
 
+2023-Jun-04 22:44:13:435 PM INFO  RedCircle - Drawing Circle[ color:red, radius: 10, x: 100, 100]
+2023-Jun-04 22:44:13:440 PM INFO  GreenCircle - Drawing Circle[ color:green, radius: 10, x: 100, 100]
