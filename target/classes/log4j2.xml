@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{yyyy-MMM-dd HH:mm:ss:SSS a} %-5level %c{1} - %msg%n" />
+        </Console>
+        <!-- Rolling File Appender -->
+        <RollingFile name="RollingFile">
+            <FileName>logs/designPattern.log</FileName>
+            <FilePattern>logs/designPattern.log_%d{dd-MM-yyyy}.log</FilePattern>
+            <PatternLayout>
+                <Pattern>%d{yyyy-MMM-dd HH:mm:ss:SSS a} %-5level %c{1} - %msg%n
+                </Pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- Causes a rollover once the date/time pattern no longer applies to
+                    the active file -->
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true" />
+            </Policies>
+            <DefaultRolloverStrategy>
+                <Delete basePath="logs" maxDepth="1">
+                    <IfFileName glob="designPattern*.log">
+                        <IfAny>
+                            <IfAccumulatedFileCount exceeds="30" />
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <Logger name="com.design.pattern" level="debug" additivity="false">
+            <AppenderRef ref="RollingFile" />
+            <AppenderRef ref="Console" />
+        </Logger>
+
+        <!-- Log everything in Spring Boot -->
+        <Logger name="org.springframework.boot" level="INFO"
+                additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile" />
+        </Logger>
+
+        <Root level="error">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile" />
+        </Root>
+    </Loggers>
+</Configuration>
