@@ -28,7 +28,5 @@ class MainClass {
         log.info("floodResistantHome: ", floodResistantHome);
         log.info(floodResistantHome.floor);
 
-
-
     }
 }

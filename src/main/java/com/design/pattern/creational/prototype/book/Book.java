@@ -4,7 +4,7 @@ public class Book {
 
     private int bid;
 
-    private String bname;
+    private String bName;
 
     public int getBid() {
         return bid;
@@ -14,19 +14,19 @@ public class Book {
         this.bid = bid;
     }
 
-    public String getBname() {
-        return bname;
+    public String getbName() {
+        return bName;
     }
 
-    public void setBname(String bname) {
-        this.bname = bname;
+    public void setbName(String bName) {
+        this.bName = bName;
     }
 
     @Override
     public String toString() {
         return "Book{" +
                 "bid=" + bid +
-                ", bname='" + bname + '\'' +
+                ", bname='" + bName + '\'' +
                 '}';
     }
 }

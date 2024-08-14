@@ -30,7 +30,7 @@ public class BookShop implements Cloneable {
         for (int i = 0; i < 10; i++) {
             Book b = new Book();
             b.setBid(i);
-            b.setBname("Book " + i);
+            b.setbName("Book " + i);
             getBooks().add(b);
         }
     }

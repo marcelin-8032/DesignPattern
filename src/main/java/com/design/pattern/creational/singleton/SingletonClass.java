@@ -23,7 +23,6 @@ public final class SingletonClass {
         return SingletonClass.instance;
     }
 
-
     public void simpleMethod1() {
         log.info("Print simple method 1");
     }

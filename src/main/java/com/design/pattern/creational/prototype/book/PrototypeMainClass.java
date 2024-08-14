@@ -16,7 +16,6 @@ public class PrototypeMainClass {
 
         log.info("bs", bs);
         log.info("bs1", bs1);
-
     }
 
 }
