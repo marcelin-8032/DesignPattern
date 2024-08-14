@@ -19,8 +19,4 @@ public class WebSiteReal implements IWebSite {
     private void loadFromTheSite(String siteName) {
         log.info("Load from the site: " + siteName);
     }
-
-
-
-
 }
