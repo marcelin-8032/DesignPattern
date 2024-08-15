@@ -1,2 +1,9 @@
 2024-Aug-14 12:29:48:468 PM INFO  PrototypeMainClass - bs
 2024-Aug-14 12:29:48:486 PM INFO  PrototypeMainClass - bs1
+2024-Aug-15 17:09:12:301 PM INFO  StoppedState - Starting video.
+2024-Aug-15 17:09:12:307 PM INFO  PlayingState - Video is buffering...
+2024-Aug-15 17:09:12:311 PM INFO  BufferingState - Cannot play while buffering. Please wait.
+2024-Aug-15 17:09:12:312 PM INFO  BufferingState - Stopping buffering and stopping video.
+2024-Aug-15 17:09:12:312 PM INFO  StoppedState - Starting video.
+2024-Aug-15 17:09:12:312 PM INFO  PlayingState - Video paused.
+2024-Aug-15 17:09:12:316 PM INFO  PausedState - Video stopped.
